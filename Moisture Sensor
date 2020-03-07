@@ -1,0 +1,21 @@
+void setup(){
+  pinMode(13, OUTPUT);
+  Serial.begin(57600);
+
+}
+
+void loop(){
+  int soilmoisture = analogRead(A0);
+   Serial.print("Moisture Sensor Value:");
+  Serial.println(soilmoisture);
+  delay(100);
+
+  if(soilmoisture <= 300){
+    // Turn on motor 
+    digitalWrite(13, HIGH);  
+  }
+  else{
+    // Turn off motor 
+    digitalWrite(13, LOW);
+  }
+}
