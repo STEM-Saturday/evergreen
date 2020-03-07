@@ -1,4 +1,4 @@
-# Evergreen
+# evergreen
 An automated green space moisturizing and fertilizing system
 
 ## Description
